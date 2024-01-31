@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="" />
+    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/MenuList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Customer_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Customer_DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Database.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +28,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1fae3b07-9841-4384-9338-22363bced8f7" />
+        <option name="url" value="https://github.com/dd3ho/CoffeePos.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -32,7 +52,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2aiEigsCz1hJzJqRql9j51fJmll" />
   <component name="ProjectLevelVcsManager">
@@ -48,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/USER/Desktop/pm/CoffeePOS",
+    "last_opened_file_path": "C:/Users/USER/Desktop/pm/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +80,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ku.cs.models" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ku.cs.App" />
@@ -94,6 +119,7 @@
       <workItem from="1704950169224" duration="2936000" />
       <workItem from="1704953169445" duration="6163000" />
       <workItem from="1706719655823" duration="1350000" />
+      <workItem from="1706722323254" duration="3654000" />
     </task>
     <servers />
   </component>
