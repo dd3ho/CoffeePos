@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="borderPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.FaceRecognitionController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Face Recognition" />
+            <Button text="Recognize Face" onAction="#recognizeFace" />
+            <ImageView fx:id="imageView" fitHeight="200" fitWidth="200" preserveRatio="true" />
+        </VBox>
+    </center>
+</BorderPane>
