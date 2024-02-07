@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.PosSignupController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.PosSignupController">
    <children>
       <ImageView fitHeight="473.0" fitWidth="669.0" layoutY="-3.0" pickOnBounds="true">
          <image>
@@ -42,11 +42,6 @@
             <Font name="Arial Rounded MT Bold" size="14.0" />
          </font>
       </PasswordField>
-      <Button layoutX="54.0" layoutY="395.0" mnemonicParsing="false" style="-fx-background-color: #845b44;" text="กลับ Login" textFill="WHITE">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="14.0" />
-         </font>
-      </Button>
       <Button layoutX="353.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleSignUpButton" style="-fx-background-color: #845b44;" text="ลงทะเบียน" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="14.0" />

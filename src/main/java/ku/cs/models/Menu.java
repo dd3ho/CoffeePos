@@ -27,7 +27,7 @@ public class Menu {
     //    setter
 
     public void setMn_Id(MenuList menus) {
-        this.mn_Id = "mn" + String.format("%04d", menus.countMenus()+1);
+        this.mn_Id = "mn" + String.format("%03d", menus.countMenus()+1);
     }
 
     public void setMn_name(String mn_name) {
