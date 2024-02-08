@@ -1,24 +1,24 @@
-package ku.cs.servicesDB;
+package ku.cs.servicesDB.old;
 
-import ku.cs.models.DocumentTOB;
-import ku.cs.models.DocumentTOBList;
+import ku.cs.models.*;
+import ku.cs.servicesDB.Database;
 
 import java.sql.*;
 
-public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOBList> {
+public class Invoice_DBConnect implements Database<Invoice, InvoiceList> {
 
     //database connect
     public Connection conn = null;
     public Statement stmt = null;
     public ResultSet rs = null;
 
-    private DatabaseConnection databaseConnection;
+    //prepare for return Receipt  from method readData
+    private Invoice invoiceRecord;
 
-    //prepare for return Customer method readData
-    private DocumentTOB documentReadDb;
-
+    //ใส่ object --> insert ข้อมูลใน table
     @Override
-    public void insertDatabase(DocumentTOB document) {
+    public void insertDatabase(Invoice invoice) {
+
         //database connect
         Connection conn = null;
         Statement stmt = null;
@@ -31,9 +31,15 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
             conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/test_loansystem", "root", "");
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
-            String query1 = "INSERT INTO documenttransactionofborrow " + "VALUES ('" + document.getDtb_id() + "','" + document.getDtb_customerId() + "','" + document.getDtb_d1()+ "','" + document.getDtb_d2() + "','" + document.getDtb_d3() + "','" + document.getDtb_d4() + "','" + document.getDtb_date()+ "' ,'" + document.getDtb_status() + "' )";
+
+            String query1 = "INSERT INTO invoice " + "VALUES ('" +invoice.getInvoice_id()+ "','" + invoice.getInvoice_customerId() + "'" +
+                    ",'" + invoice.getInvoice_ctmfirstname() + "','" + invoice.getInvoice_ctmlastname() + "','" + invoice.getInvoice_ctmbankAccount() + "'" +
+                    ",'" + invoice.getInvoice_ctmDebt() + "','" + invoice.getInvoice_date() + " ', '"+invoice.getInvoice_month()+"', '"+invoice.getInvoice_year()+"', '" +invoice.getInvoice_status()+ "')";
+
             stmt.executeUpdate(query1);
+
             System.out.println("Record is inserted in the table successfully..................");
+
         } catch (Exception excep) {
             excep.printStackTrace();
         } finally {
@@ -50,20 +56,23 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
             }
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
+
     }
 
 
     @Override
-    public DocumentTOB readRecord(String query) {
+    public Invoice readRecord(String query) {
         //prepare data
         String id ;
-        String ctm_id ;
-        String d1;
-        String d2 ;
-        String d3 ;
-        String d4 ;
-        String date ;
-        String status;
+        String customerId ;
+        String fname;
+        String lname;
+        String bankAcc ;
+        int debt ;
+        String date;
+        String month;
+        String year;
+        String status ;
 
         //DB connect
         try {
@@ -80,15 +89,18 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
 
             while (rs.next()) {
                 id = rs.getString(1);
-                ctm_id = rs.getString(2);
-                d1 = rs.getString(3);
-                d2 = rs.getString(4);
-                d3 = rs.getString(5);
-                d4 = rs.getString(6);
+                customerId = rs.getString(2);
+                fname = rs.getString(3);
+                lname = rs.getString(4);
+                bankAcc = rs.getString(5);
+                debt = Integer.parseInt(rs.getString(6));
                 date = rs.getString(7);
-                status = rs.getString(8);
+                month = rs.getString(8);
+                year = rs.getString(9);
+                status = rs.getString(10);
 
-                this.documentReadDb = new DocumentTOB(id, ctm_id, d1, d2, d3, d4, date, status);
+                this.invoiceRecord = new Invoice(id, customerId, fname, lname, bankAcc, debt, date, month, year, status);
+
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("Account can use from jdbc");
@@ -109,14 +121,15 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
 
-        return documentReadDb;
+
+        return invoiceRecord;
     }
 
-
-    //return list
+    //ใส่ query return เป็น list
     @Override
-    public DocumentTOBList readDatabase(String q) {
-        DocumentTOBList list = new DocumentTOBList();
+    public InvoiceList readDatabase(String q) {
+
+        InvoiceList list = new InvoiceList();
 
         //DB connect
         try {
@@ -133,16 +146,18 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
 
             while (rs.next()) {
                 String id = rs.getString(1);
-                String ctm_id = rs.getString(2);
-                String d1 = rs.getString(3);
-                String d2 = rs.getString(4);
-                String d3 = rs.getString(5);
-                String d4 = rs.getString(6);
-                String date = rs.getString(7);
-                String status = rs.getString(8);
+                String customerId = rs.getNString(2);
+                String fname = rs.getString(3);
+                String lname = rs.getString(4);
+                String bankAcc = rs.getString(5);
+                int debt = Integer.parseInt(rs.getString(6));
+                String date = rs.getNString(7);
+                String month = rs.getString(8);
+                String year = rs.getString(9);
+                String status = rs.getString(10);
 
-                this.documentReadDb = new DocumentTOB(id, ctm_id, d1, d2, d3, d4, date, status);
-                list.addDocumentTrans(documentReadDb);
+                this.invoiceRecord = new Invoice(id, customerId, fname, lname, bankAcc, debt, date, month, year,status);
+                list.addInvoice(invoiceRecord);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("list can use from jdbc");
@@ -166,7 +181,7 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
         return list;
     }
 
-
+    //ใส่ query --> update table
     @Override
     public void updateDatabase(String q) {
         Connection conn = null;
@@ -201,9 +216,5 @@ public class DocumentTOB_DBConnect implements Database <DocumentTOB, DocumentTOB
         }
         System.out.println("Please check it in the MySQL Table. Record is now updated.......");
     }
-
 }
-
-
-
 

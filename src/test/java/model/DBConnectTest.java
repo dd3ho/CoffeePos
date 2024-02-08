@@ -2,7 +2,7 @@ package model;
 
 import ku.cs.models.Customer;
 import ku.cs.models.CustomerList;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
 import org.junit.jupiter.api.Test;
 

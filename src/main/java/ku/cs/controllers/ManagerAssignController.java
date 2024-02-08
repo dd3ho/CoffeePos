@@ -13,8 +13,8 @@ import ku.cs.models.EmployeeList;
 import ku.cs.models.LoanAgreement;
 import ku.cs.models.LoanAgreementList;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Employee_DBConnect;
-import ku.cs.servicesDB.LoanAgreement_DBConnect;
+import ku.cs.servicesDB.old.Employee_DBConnect;
+import ku.cs.servicesDB.old.LoanAgreement_DBConnect;
 
 import java.io.IOException;
 import java.util.Optional;

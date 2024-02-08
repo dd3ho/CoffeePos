@@ -3,7 +3,7 @@ package model;
 import ku.cs.models.DocumentTOB;
 import ku.cs.models.DocumentTOBList;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.DocumentTOB_DBConnect;
+import ku.cs.servicesDB.old.DocumentTOB_DBConnect;
 import org.junit.jupiter.api.Test;
 
 public class LoanAgreementTest {

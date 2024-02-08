@@ -13,7 +13,7 @@ import javafx.stage.FileChooser;
 import ku.cs.FXRouter;
 import ku.cs.models.Customer;
 import ku.cs.models.CustomerList;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
 
 

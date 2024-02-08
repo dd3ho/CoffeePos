@@ -11,9 +11,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import ku.cs.FXRouter;
 import ku.cs.models.*;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.DocumentTOB_DBConnect;
+import ku.cs.servicesDB.old.DocumentTOB_DBConnect;
 
 import java.io.File;
 import java.io.IOException;

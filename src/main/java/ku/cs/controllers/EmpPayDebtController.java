@@ -12,9 +12,9 @@ import ku.cs.models.Customer;
 import ku.cs.models.CustomerList;
 import ku.cs.models.Invoice;
 import ku.cs.models.InvoiceList;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Invoice_DBConnect;
+import ku.cs.servicesDB.old.Invoice_DBConnect;
 
 import java.io.IOException;
 import java.util.Optional;

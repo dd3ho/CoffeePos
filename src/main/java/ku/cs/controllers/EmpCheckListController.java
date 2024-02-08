@@ -3,7 +3,6 @@ package ku.cs.controllers;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -13,16 +12,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import ku.cs.FXRouter;
 import ku.cs.models.*;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Invoice_DBConnect;
+import ku.cs.servicesDB.old.Invoice_DBConnect;
 
 public class EmpCheckListController {
 

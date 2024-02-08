@@ -9,7 +9,7 @@ import ku.cs.FXRouter;
 import ku.cs.models.Employee;
 import ku.cs.models.EmployeeList;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Employee_DBConnect;
+import ku.cs.servicesDB.old.Employee_DBConnect;
 
 import java.io.IOException;
 import java.sql.*;

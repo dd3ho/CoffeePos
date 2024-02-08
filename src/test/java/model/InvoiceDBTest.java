@@ -3,7 +3,7 @@ package model;
 import ku.cs.models.Invoice;
 import ku.cs.models.InvoiceList;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Invoice_DBConnect;
+import ku.cs.servicesDB.old.Invoice_DBConnect;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

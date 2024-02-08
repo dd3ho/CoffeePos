@@ -10,6 +10,10 @@ import javafx.scene.input.MouseEvent;
 import ku.cs.FXRouter;
 import ku.cs.models.*;
 import ku.cs.servicesDB.*;
+import ku.cs.servicesDB.old.Customer_DBConnect;
+import ku.cs.servicesDB.old.Employee_DBConnect;
+import ku.cs.servicesDB.old.Invoice_DBConnect;
+import ku.cs.servicesDB.old.LoanAgreement_DBConnect;
 
 import java.io.IOException;
 import java.time.LocalDate;

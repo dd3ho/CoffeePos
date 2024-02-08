@@ -1,10 +1,12 @@
-package ku.cs.servicesDB;
+package ku.cs.servicesDB.old;
 
-import ku.cs.models.*;
+import ku.cs.models.LoanAgreement;
+import ku.cs.models.LoanAgreementList;
+import ku.cs.servicesDB.Database;
 
 import java.sql.*;
 
-public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
+public class LoanAgreement_DBConnect implements Database<LoanAgreement, LoanAgreementList> {
 
     //database connect
     public Connection conn = null;
@@ -12,11 +14,11 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
     public ResultSet rs = null;
 
     //prepare for return Receipt  from method readData
-    private Invoice invoiceRecord;
+    private LoanAgreement loanAgreementRecord;
 
-    //ใส่ object --> insert ข้อมูลใน table
+
     @Override
-    public void insertDatabase(Invoice invoice) {
+    public void insertDatabase(LoanAgreement loanAgreement) {
 
         //database connect
         Connection conn = null;
@@ -31,12 +33,13 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
 
-            String query1 = "INSERT INTO invoice " + "VALUES ('" +invoice.getInvoice_id()+ "','" + invoice.getInvoice_customerId() + "'" +
-                    ",'" + invoice.getInvoice_ctmfirstname() + "','" + invoice.getInvoice_ctmlastname() + "','" + invoice.getInvoice_ctmbankAccount() + "'" +
-                    ",'" + invoice.getInvoice_ctmDebt() + "','" + invoice.getInvoice_date() + " ', '"+invoice.getInvoice_month()+"', '"+invoice.getInvoice_year()+"', '" +invoice.getInvoice_status()+ "')";
+            String query1 = "INSERT INTO loanagreement " + "VALUES ('" +loanAgreement.getLoan_id()+ "','" + loanAgreement.getLoan_customerId() + "'" +
+                    ",'" + loanAgreement.getLoan_firstname() + "','" + loanAgreement.getLoan_lastname() + "','" + loanAgreement.getLoan_type() + "'" +
+                    ",'" + loanAgreement.getLoan_term() + "','" + loanAgreement.getLoan_date() + " ', '" +loanAgreement.getLoan_balance()+ "', " +
+                    "'"+loanAgreement.getLoan_amount()+"', '"+loanAgreement.getLoan_witness1()+"', '"+loanAgreement.getLoan_witness2()+"', " +
+                    "'"+loanAgreement.getLoan_Emp1()+"', '"+loanAgreement.getLoan_Emp2()+"')";
 
             stmt.executeUpdate(query1);
-
             System.out.println("Record is inserted in the table successfully..................");
 
         } catch (Exception excep) {
@@ -55,23 +58,25 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
             }
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
-
     }
 
 
     @Override
-    public Invoice readRecord(String query) {
+    public LoanAgreement readRecord(String query) {
         //prepare data
-        String id ;
-        String customerId ;
+        String id;
+        String customerId;
         String fname;
         String lname;
-        String bankAcc ;
-        int debt ;
+        String type ;
+        int term ;
         String date;
-        String month;
-        String year;
-        String status ;
+        int balance;
+        int amount;
+        String witness1 ;
+        String witness2 ;
+        String emp1 ;
+        String emp2 ;
 
         //DB connect
         try {
@@ -91,14 +96,18 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
                 customerId = rs.getString(2);
                 fname = rs.getString(3);
                 lname = rs.getString(4);
-                bankAcc = rs.getString(5);
-                debt = Integer.parseInt(rs.getString(6));
+                type = rs.getString(5);
+                term = Integer.parseInt(rs.getString(6));
                 date = rs.getString(7);
-                month = rs.getString(8);
-                year = rs.getString(9);
-                status = rs.getString(10);
+                balance = Integer.parseInt(rs.getString(8));
+                amount = Integer.parseInt(rs.getString(9));
+                witness1 = rs.getString(10);
+                witness2 = rs.getString(11);
+                emp1 = rs.getString(12);
+                emp2 = rs.getString(13);
 
-                this.invoiceRecord = new Invoice(id, customerId, fname, lname, bankAcc, debt, date, month, year, status);
+                this.loanAgreementRecord = new LoanAgreement(id, customerId, fname, lname, type,term, date, balance, amount,
+                        witness1, witness2, emp1, emp2);
 
 //                System.out.println(empLoginAccount.toCsv());
             }
@@ -119,16 +128,13 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
             }
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
-
-
-        return invoiceRecord;
+        return loanAgreementRecord;
     }
 
     //ใส่ query return เป็น list
     @Override
-    public InvoiceList readDatabase(String q) {
-
-        InvoiceList list = new InvoiceList();
+    public LoanAgreementList readDatabase(String q) {
+        LoanAgreementList list = new LoanAgreementList();
 
         //DB connect
         try {
@@ -148,15 +154,20 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
                 String customerId = rs.getNString(2);
                 String fname = rs.getString(3);
                 String lname = rs.getString(4);
-                String bankAcc = rs.getString(5);
-                int debt = Integer.parseInt(rs.getString(6));
+                String type = rs.getString(5);
+                int term = Integer.parseInt(rs.getString(6));
                 String date = rs.getNString(7);
-                String month = rs.getString(8);
-                String year = rs.getString(9);
-                String status = rs.getString(10);
+                int balance = Integer.parseInt(rs.getString(8));
+                int amount = Integer.parseInt(rs.getString(9));
+                String witness1 = rs.getString(10);
+                String witness2 = rs.getString(11);
+                String emp1 = rs.getString(12);
+                String emp2 = rs.getString(13);
 
-                this.invoiceRecord = new Invoice(id, customerId, fname, lname, bankAcc, debt, date, month, year,status);
-                list.addInvoice(invoiceRecord);
+                this.loanAgreementRecord = new LoanAgreement(id, customerId, fname, lname, type,term, date, balance, amount,
+                        witness1, witness2, emp1, emp2);
+
+                list.addLoan(loanAgreementRecord);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("list can use from jdbc");
@@ -183,6 +194,7 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
     //ใส่ query --> update table
     @Override
     public void updateDatabase(String q) {
+
         Connection conn = null;
         Statement stmt = null;
         try {
@@ -216,4 +228,5 @@ public class Invoice_DBConnect implements Database<Invoice, InvoiceList>{
         System.out.println("Please check it in the MySQL Table. Record is now updated.......");
     }
 }
+
 

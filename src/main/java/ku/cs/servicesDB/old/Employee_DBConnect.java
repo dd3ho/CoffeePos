@@ -1,7 +1,8 @@
-package ku.cs.servicesDB;
+package ku.cs.servicesDB.old;
 
 import ku.cs.models.Employee;
 import ku.cs.models.EmployeeList;
+import ku.cs.servicesDB.Database;
 
 import java.sql.*;
 

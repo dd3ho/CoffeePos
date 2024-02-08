@@ -1,27 +1,26 @@
-package ku.cs.servicesDB;
+package ku.cs.servicesDB.old;
 
-import ku.cs.models.Invoice;
-import ku.cs.models.InvoiceList;
-import ku.cs.models.Receipt;
-import ku.cs.models.ReceiptList;
+import ku.cs.models.DocumentTOB;
+import ku.cs.models.DocumentTOBList;
+import ku.cs.servicesDB.Database;
+import ku.cs.servicesDB.DatabaseConnection;
 
 import java.sql.*;
 
-public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
+public class DocumentTOB_DBConnect implements Database<DocumentTOB, DocumentTOBList> {
 
     //database connect
     public Connection conn = null;
     public Statement stmt = null;
     public ResultSet rs = null;
 
-    //prepare for return Receipt  from method readData
-    private Receipt receiptRecord;
+    private DatabaseConnection databaseConnection;
 
+    //prepare for return Customer method readData
+    private DocumentTOB documentReadDb;
 
-
-    //ใส่ object --> insert ข้อมูลใน table
     @Override
-    public void insertDatabase(Receipt receipt) {
+    public void insertDatabase(DocumentTOB document) {
         //database connect
         Connection conn = null;
         Statement stmt = null;
@@ -34,7 +33,7 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
             conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/test_loansystem", "root", "");
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
-            String query1 = "INSERT INTO receipt   VALUES ('" +receipt.getRec_id() + "','" + receipt.getRec_customerId() + "','" + receipt.getRec_date() + "', '"+receipt.getRec_month()+"', '"+receipt.getRec_year()+"', '" + receipt.getRec_payAmt() + "','" + receipt.getRec_balanceLoan() + "', '"+receipt.getRec_invoiceId()+"') ";
+            String query1 = "INSERT INTO documenttransactionofborrow " + "VALUES ('" + document.getDtb_id() + "','" + document.getDtb_customerId() + "','" + document.getDtb_d1()+ "','" + document.getDtb_d2() + "','" + document.getDtb_d3() + "','" + document.getDtb_d4() + "','" + document.getDtb_date()+ "' ,'" + document.getDtb_status() + "' )";
             stmt.executeUpdate(query1);
             System.out.println("Record is inserted in the table successfully..................");
         } catch (Exception excep) {
@@ -57,16 +56,16 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
 
 
     @Override
-    public Receipt readRecord(String query) {
+    public DocumentTOB readRecord(String query) {
         //prepare data
         String id ;
-        String customerId ;
-        String date;
-        String month;
-        String year;
-        int payamy ;
-        int balanceLoan ;
-        String invoiceId ;
+        String ctm_id ;
+        String d1;
+        String d2 ;
+        String d3 ;
+        String d4 ;
+        String date ;
+        String status;
 
         //DB connect
         try {
@@ -83,17 +82,15 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
 
             while (rs.next()) {
                 id = rs.getString(1);
-                customerId = rs.getString(2);
-                date = rs.getString(3);
-                month = rs.getString(4);
-                year = rs.getString(5);
-                payamy = Integer.parseInt(rs.getString(6));
-                balanceLoan = Integer.parseInt( rs.getString(7));
-                invoiceId = rs.getString(8);
+                ctm_id = rs.getString(2);
+                d1 = rs.getString(3);
+                d2 = rs.getString(4);
+                d3 = rs.getString(5);
+                d4 = rs.getString(6);
+                date = rs.getString(7);
+                status = rs.getString(8);
 
-
-                this.receiptRecord = new Receipt(id, customerId, date, month, year, payamy, balanceLoan, invoiceId);
-
+                this.documentReadDb = new DocumentTOB(id, ctm_id, d1, d2, d3, d4, date, status);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("Account can use from jdbc");
@@ -114,15 +111,14 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
 
-
-        return receiptRecord;
+        return documentReadDb;
     }
 
-    //ใส่ query return เป็น list
-    @Override
-    public ReceiptList readDatabase(String q) {
 
-        ReceiptList list = new ReceiptList();
+    //return list
+    @Override
+    public DocumentTOBList readDatabase(String q) {
+        DocumentTOBList list = new DocumentTOBList();
 
         //DB connect
         try {
@@ -138,18 +134,17 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
             rs = stmt.executeQuery(q);
 
             while (rs.next()) {
-
                 String id = rs.getString(1);
-                String customerId = rs.getString(2);
-                String date = rs.getString(3);
-                String month = rs.getString(4);
-                String year = rs.getString(5);
-                int payamy = Integer.parseInt(rs.getString(6));
-                int balanceLoan = Integer.parseInt( rs.getString(7));
-                String invoiceId = rs.getString(8);
+                String ctm_id = rs.getString(2);
+                String d1 = rs.getString(3);
+                String d2 = rs.getString(4);
+                String d3 = rs.getString(5);
+                String d4 = rs.getString(6);
+                String date = rs.getString(7);
+                String status = rs.getString(8);
 
-                this.receiptRecord = new Receipt(id, customerId, date, month, year, payamy, balanceLoan, invoiceId);
-                list.addReceipt(receiptRecord);
+                this.documentReadDb = new DocumentTOB(id, ctm_id, d1, d2, d3, d4, date, status);
+                list.addDocumentTrans(documentReadDb);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("list can use from jdbc");
@@ -173,9 +168,44 @@ public class Receipt_DBConnect implements Database<Receipt, ReceiptList> {
         return list;
     }
 
-    //ใส่ query --> update table
+
     @Override
     public void updateDatabase(String q) {
-
+        Connection conn = null;
+        Statement stmt = null;
+        try {
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/test_loansystem", "root", "");
+            System.out.println("Connection is created successfully:");
+            stmt = (Statement) conn.createStatement();
+            String query1 = q;
+            stmt.executeUpdate(query1);
+            System.out.println("Record has been updated in the table successfully..................");
+        } catch (SQLException excep) {
+            excep.printStackTrace();
+        } catch (Exception excep) {
+            excep.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null)
+                    conn.close();
+            } catch (SQLException se) {}
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
+        }
+        System.out.println("Please check it in the MySQL Table. Record is now updated.......");
     }
+
 }
+
+
+
+

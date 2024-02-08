@@ -11,10 +11,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import ku.cs.FXRouter;
 import ku.cs.models.*;
-import ku.cs.servicesDB.Customer_DBConnect;
+import ku.cs.servicesDB.old.Customer_DBConnect;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.DocumentTOB_DBConnect;
-import ku.cs.servicesDB.Employee_DBConnect;
+import ku.cs.servicesDB.old.DocumentTOB_DBConnect;
+import ku.cs.servicesDB.old.Employee_DBConnect;
 
 
 import java.io.IOException;

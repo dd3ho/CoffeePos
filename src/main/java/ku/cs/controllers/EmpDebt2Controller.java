@@ -10,8 +10,7 @@ import javafx.scene.input.MouseEvent;
 import ku.cs.FXRouter;
 import ku.cs.models.*;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.DocumentTOB_DBConnect;
-import ku.cs.servicesDB.Invoice_DBConnect;
+import ku.cs.servicesDB.old.Invoice_DBConnect;
 
 import java.io.IOException;
 import java.util.Optional;
