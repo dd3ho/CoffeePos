@@ -1,6 +1,8 @@
 package ku.cs.models;
 
 public class User {
+
+
     private String u_Id;
 
     private String u_password;
@@ -30,6 +32,10 @@ public class User {
     //setter
     public void setU_id(UserList users) {
         this.u_Id = "u" + String.format("%04d", users.countUsers()+1);
+    }
+
+    public void setLoginU_Id(String u_Id) {
+        this.u_Id = u_Id;
     }
 
 

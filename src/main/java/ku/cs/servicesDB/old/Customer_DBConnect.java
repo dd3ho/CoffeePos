@@ -54,11 +54,11 @@ public class Customer_DBConnect implements Database<Customer, CustomerList> {
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
     }
-
-    @Override
-    public void insertDatabase(User user) {
-
-    }
+//
+//    @Override
+//    public void insertDatabase(User user) {
+//
+//    }
 
 
     @Override
