@@ -1,11 +1,5 @@
 package ku.cs.servicesDB;
 
-import ku.cs.models.Customer;
-import ku.cs.models.Employee;
-import ku.cs.models.User;
-
-import java.util.ArrayList;
-
 public interface Database<T, C> {
 
     //ใส่ object --> insert ข้อมูลใน table

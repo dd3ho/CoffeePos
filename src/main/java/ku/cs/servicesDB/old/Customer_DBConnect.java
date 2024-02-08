@@ -1,8 +1,7 @@
 package ku.cs.servicesDB.old;
 
-import ku.cs.models.Customer;
-import ku.cs.models.CustomerList;
-import ku.cs.models.User;
+import ku.cs.models.old.Customer;
+import ku.cs.models.old.CustomerList;
 import ku.cs.servicesDB.Database;
 
 import java.sql.*;

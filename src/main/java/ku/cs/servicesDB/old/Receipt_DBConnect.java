@@ -1,9 +1,7 @@
 package ku.cs.servicesDB.old;
 
-import ku.cs.models.Invoice;
-import ku.cs.models.InvoiceList;
-import ku.cs.models.Receipt;
-import ku.cs.models.ReceiptList;
+import ku.cs.models.old.Receipt;
+import ku.cs.models.old.ReceiptList;
 import ku.cs.servicesDB.Database;
 
 import java.sql.*;

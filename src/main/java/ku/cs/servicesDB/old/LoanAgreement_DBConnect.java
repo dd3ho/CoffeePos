@@ -1,7 +1,7 @@
 package ku.cs.servicesDB.old;
 
-import ku.cs.models.LoanAgreement;
-import ku.cs.models.LoanAgreementList;
+import ku.cs.models.old.LoanAgreement;
+import ku.cs.models.old.LoanAgreementList;
 import ku.cs.servicesDB.Database;
 
 import java.sql.*;

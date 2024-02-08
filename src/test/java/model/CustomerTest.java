@@ -1,6 +1,6 @@
 package model;
 
-import ku.cs.models.Customer;
+import ku.cs.models.old.Customer;
 import org.junit.jupiter.api.Test;
 
 public class CustomerTest {

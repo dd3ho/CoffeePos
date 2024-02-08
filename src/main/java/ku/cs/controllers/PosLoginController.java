@@ -6,12 +6,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import ku.cs.FXRouter;
-import ku.cs.models.Employee;
-import ku.cs.models.EmployeeList;
 import ku.cs.models.User;
 import ku.cs.models.UserList;
 import ku.cs.servicesDB.Database;
-import ku.cs.servicesDB.Employee_DBConnect;
 import ku.cs.servicesDB.User_DBConnect;
 
 import java.io.IOException;

@@ -1,7 +1,5 @@
 package ku.cs.servicesDB;
 
-import ku.cs.models.Customer;
-import ku.cs.models.Employee;
 import ku.cs.models.User;
 import ku.cs.models.UserList;
 

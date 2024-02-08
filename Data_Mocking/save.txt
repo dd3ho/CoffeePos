@@ -6,7 +6,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import ku.cs.FXRouter;
-import ku.cs.models.Employee;
+import ku.cs.models.old.Employee;
 
 import java.io.IOException;
 import java.sql.*;
@@ -126,7 +126,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import ku.cs.FXRouter;
-import ku.cs.models.Customer;
+import ku.cs.models.old.Customer;
 import ku.cs.models.CustomerDatabase;
 import ku.cs.services.FileDataSources.CustomerFileDataSource;
 import ku.cs.services.FileDataSources.DataSource;
