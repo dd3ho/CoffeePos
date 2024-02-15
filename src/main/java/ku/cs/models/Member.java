@@ -18,6 +18,13 @@ public class Member {
 
     //constructor
     public Member(String mId, String mFirstname, String mLastname, String mTel, int mPoints, String mDateJoin, String mLasted) {
+        this.m_Id =mId;
+        this.m_firstname = mFirstname;
+        this.m_lastname = mLastname;
+        this.m_tel = mTel;
+        this.m_points = mPoints;
+        this.m_date_join = mDateJoin;
+        this.m_lasted = mLasted;
     }
 
 
