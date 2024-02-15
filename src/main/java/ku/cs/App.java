@@ -19,7 +19,9 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         FXRouter.bind(this, stage, "Coffee POS",669, 473);
         configRoute();
-        FXRouter.goTo("pos_signup");
+
+        FXRouter.goTo("pos_addDessert");
+
     }
 
     private void configRoute() {
@@ -35,7 +37,7 @@ public class App extends Application {
         //coffee POS Admin
         FXRouter.when("pos_signup",packageStr+"pos_signup.fxml");
         FXRouter.when("pos_addDrink",packageStr+"pos_adddrink.fxml");
-
+        FXRouter.when("pos_addDessert",packageStr+"pos_adddessert.fxml");
 
         //coffee POS Staff
 
