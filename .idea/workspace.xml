@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Receipt_DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Member_DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +142,7 @@
       <workItem from="1706722323254" duration="3654000" />
       <workItem from="1706773418298" duration="2655000" />
       <workItem from="1707378950436" duration="5281000" />
-      <workItem from="1707976438603" duration="3500000" />
+      <workItem from="1707976438603" duration="5145000" />
     </task>
     <task id="LOCAL-00001" summary="moved">
       <created>1707394794920</created>

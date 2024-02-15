@@ -16,8 +16,10 @@ public class Member {
     //variable
     int memberCount;
 
+    //constructor
+    public Member(String mId, String mFirstname, String mLastname, String mTel, int mPoints, String mDateJoin, String mLasted) {
+    }
 
-    // Constructor
 
     // Getter, Setter
 
