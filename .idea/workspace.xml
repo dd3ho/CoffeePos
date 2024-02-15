@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddDessertController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/AddDessertController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Receipt_DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddessert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddessert.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <workItem from="1706722323254" duration="3654000" />
       <workItem from="1706773418298" duration="2655000" />
       <workItem from="1707378950436" duration="5281000" />
-      <workItem from="1707976438603" duration="1632000" />
+      <workItem from="1707976438603" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="moved">
       <created>1707394794920</created>
