@@ -4,81 +4,88 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="moved">
+    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Receipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/ReceiptList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Mocking/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Mocking/save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/FXRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/FXRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/CreditBoardHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/CreditBoardHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/CreditBoardUpdate2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/CreditBoardUpdate2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/CreditBoardUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/CreditBoardUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpCheckListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpCheckListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpDebt2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpDebt2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpDebtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpDebtController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpInvoice2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpInvoice2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpInvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpInvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpLoan2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpLoan2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpLoanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpPayDebt2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpPayDebt2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpPayDebtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpPayDebtController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/EmpReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/EmpReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/ManagerAssignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/ManagerAssignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/ManagerHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/ManagerHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/PosLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/PosLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/old/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/CustomerList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/CustomerList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/DocumentTOB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/DocumentTOB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/DocumentTOBList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/DocumentTOBList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/EmployeeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/InvoiceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/InvoiceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/LoanAgreement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/LoanAgreement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/LoanAgreementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/LoanAgreementList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/ReceiptList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/old/ReceiptList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/User_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/User_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Customer_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Customer_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/DocumentTOB_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/DocumentTOB_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Employee_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Employee_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Invoice_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Invoice_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/LoanAgreement_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/LoanAgreement_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Receipt_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/old/Receipt_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/creditboard_home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/creditboard_home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/creditboard_update.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/creditboard_update.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/creditboard_update2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/creditboard_update2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_checklist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_checklist.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_debt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_debt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_debt_2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_debt_2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_document.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_document.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_invoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_invoice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_invoice2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_invoice2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_loan.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_loan.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_loan2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_loan2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_payDebt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_payDebt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_payDebt2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_payDebt2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/emp_report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/emp_report.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/manager_assign.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/manager_assign.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/manager_home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/manager_home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/signup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/testConnectDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/old/testConnectDB.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/CustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/DBConnectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/DBConnectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/DocumentTOBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/DocumentTOBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/InvoiceDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/InvoiceDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/LoanAgreementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/LoanAgreementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$RouteScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$RouteScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/CreditBoardHomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/CreditBoardUpdate2Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/CreditBoardUpdateController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/CreditBoardUpdateController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpCheckListController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpCheckListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpDebt2Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpDebtController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpDebtController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpDocumentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpHomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpInvoice2Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpInvoiceController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpInvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpLoan2Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpLoanController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpLoanController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpPayDebt2Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpPayDebtController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpPayDebtController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpReportController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/EmpReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/ManagerAssignController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/ManagerAssignController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/ManagerHomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/SampleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/SignupController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/creditboard_home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/creditboard_update.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/creditboard_update2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_checklist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_debt.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_debt_2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_document.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_invoice.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_invoice2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_loan.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_loan2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_payDebt.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_payDebt2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_registration.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/emp_report.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/manager_assign.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/manager_home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/menu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/CustomerList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/DocumentTOB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/DocumentTOBList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/EmployeeList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Invoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/InvoiceList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/LoanAgreement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/LoanAgreementList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Receipt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/ReceiptList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Customer_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/DocumentTOB_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Employee_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Invoice_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/LoanAgreement_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Receipt_DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/User_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/User_DBConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/signup.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/testConnectDB.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +159,14 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ku.cs.models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\resources\ku\cs\old" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ku.cs.models" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ku.cs.App" />
       <module name="cs211-431-project" />
@@ -167,9 +180,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomerTest.Isdigit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs211-431-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.CustomerTest" />
+      <option name="METHOD_NAME" value="Isdigit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.CustomerTest.Isdigit" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +219,8 @@
       <workItem from="1706719655823" duration="1350000" />
       <workItem from="1706722323254" duration="3654000" />
       <workItem from="1706773418298" duration="2655000" />
-      <workItem from="1707378950436" duration="2705000" />
+      <workItem from="1707378950436" duration="5281000" />
+      <workItem from="1707976438603" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="moved">
       <created>1707394794920</created>
@@ -205,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707394842387</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Arrange directory">
+      <created>1707395536971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707395536971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +263,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved" />
+    <MESSAGE value="Arrange directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrange directory" />
   </component>
 </project>

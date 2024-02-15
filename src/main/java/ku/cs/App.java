@@ -19,12 +19,32 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         FXRouter.bind(this, stage, "Coffee POS",669, 473);
         configRoute();
-        FXRouter.goTo("pos_addDrink");
+        FXRouter.goTo("pos_signup");
     }
 
     private void configRoute() {
         //เรียงด้วยนะ
         String packageStr = "ku/cs/";
+
+        //face detection
+        FXRouter.when("signup",packageStr+"signup.fxml");
+
+        //Login
+        FXRouter.when("pos_login",packageStr+"pos_login.fxml");
+
+        //coffee POS Admin
+        FXRouter.when("pos_signup",packageStr+"pos_signup.fxml");
+        FXRouter.when("pos_addDrink",packageStr+"pos_adddrink.fxml");
+
+
+        //coffee POS Staff
+
+
+
+
+
+        // old
+        // String packageStr = "ku/cs/old/";
         FXRouter.when("creditboard_home",packageStr+"creditboard_home.fxml");
         FXRouter.when("creditboard_update",packageStr+"creditboard_update.fxml");
         FXRouter.when("creditboard_update2",packageStr+"creditboard_update2.fxml");
@@ -55,13 +75,6 @@ public class App extends Application {
         FXRouter.when("menu",packageStr+"menu.fxml");
         FXRouter.when("home",packageStr+"home.fxml");
 
-        //face detection
-        FXRouter.when("signup",packageStr+"signup.fxml");
-
-        //coffee POS
-        FXRouter.when("pos_signup",packageStr+"pos_signup.fxml");
-        FXRouter.when("pos_login",packageStr+"pos_login.fxml");
-        FXRouter.when("pos_addDrink",packageStr+"pos_adddrink.fxml");
 
     }
 
