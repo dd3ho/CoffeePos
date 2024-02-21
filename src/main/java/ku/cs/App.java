@@ -20,7 +20,7 @@ public class App extends Application {
         FXRouter.bind(this, stage, "Coffee POS",669, 473);
         configRoute();
 
-        FXRouter.goTo("pos_addDessert");
+        FXRouter.goTo("pos_addMember");
 
     }
 
@@ -38,7 +38,7 @@ public class App extends Application {
         FXRouter.when("pos_signup",packageStr+"pos_signup.fxml");
         FXRouter.when("pos_addDrink",packageStr+"pos_adddrink.fxml");
         FXRouter.when("pos_addDessert",packageStr+"pos_adddessert.fxml");
-
+        FXRouter.when("pos_addMember",packageStr+"pos_member_signup.fxml");
         //coffee POS Staff
 
 

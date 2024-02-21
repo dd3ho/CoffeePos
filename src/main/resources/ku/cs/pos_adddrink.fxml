@@ -60,17 +60,17 @@
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="330.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleNoMilkBtn" style="-fx-background-color: b68e78;" text="No Sweet" textFill="#845b44">
+      <Button layoutX="330.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleFreshMilkBtn" style="-fx-background-color: b68e78;" text="Fresh Milk" textFill="#845b44">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="415.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleLessMilkBtn" style="-fx-background-color: b68e78;" text="Less Sweet" textFill="#845b44">
+      <Button layoutX="415.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleAlmondMilkBtn" style="-fx-background-color: b68e78;" text="Almond Milk" textFill="#845b44">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="507.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleExtraMilkBtn" style="-fx-background-color: b68e78;" text="Extra Sweet" textFill="#845b44">
+      <Button layoutX="514.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleOatMilkBtn" style="-fx-background-color: b68e78;" text="Oat Milk" textFill="#845b44">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>

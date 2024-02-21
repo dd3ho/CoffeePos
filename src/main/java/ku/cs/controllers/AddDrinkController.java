@@ -83,17 +83,17 @@ public class AddDrinkController {
     }
 
     @FXML
-    private void handleNoMilkBtn(ActionEvent event) throws IOException {
+    private void handleFreshMilkBtn(ActionEvent event) throws IOException {
 
     }
 
     @FXML
-    private void handleLessMilkBtn(ActionEvent event) throws IOException {
+    private void handleAlmondMilkBtn(ActionEvent event) throws IOException {
 
     }
 
     @FXML
-    private void handleExtraMilkBtn(ActionEvent event) throws IOException {
+    private void handleOatMilkBtn(ActionEvent event) throws IOException {
 
     }
 

@@ -7,6 +7,7 @@ public class Member {
     private String m_firstname;
     private String m_lastname;
     private String m_tel;
+    private String m_img;
     private Integer m_points;
 
     private String m_date_join;
@@ -47,6 +48,10 @@ public class Member {
         this.m_tel = m_tel;
     }
 
+    public void setM_img(String m_img) {
+        this.m_img = m_img;
+    }
+
     public void setM_points(Integer m_points) {
         this.m_points = m_points;
     }
@@ -79,6 +84,10 @@ public class Member {
 
     public String getM_tel() {
         return m_tel;
+    }
+
+    public String getM_img() {
+        return m_img;
     }
 
     public Integer getM_points() {
