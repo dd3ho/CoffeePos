@@ -25,12 +25,6 @@ public class AddMemberController {
     @FXML
     private TextField phoneField;
 
-    @FXML
-    private PasswordField passwordField;
-
-    @FXML
-    private PasswordField confirmPasswordField;
-
     MemberList memberList;
 
     Member member = new Member("","","","",0,"","");
@@ -51,10 +45,8 @@ public class AddMemberController {
         String firstNameStr = firstNameField.getText();
         String lastNameStr = lastNameField.getText();
         String phoneStr = phoneField.getText();
-        String passwordStr = passwordField.getText();
-        String confirmPasswordStr = confirmPasswordField.getText();
 
-        if (firstNameStr.equals("") || lastNameStr.equals("") || phoneStr.equals("") || passwordStr.equals("") || confirmPasswordStr.equals("")) {
+        if (firstNameStr.equals("") || lastNameStr.equals("") || phoneStr.equals("")) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error!!");
             alert.setHeaderText(null);
@@ -62,13 +54,6 @@ public class AddMemberController {
 
             alert.showAndWait();
 
-        } else if (!passwordStr.equals(confirmPasswordStr)) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Error!!");
-            alert.setHeaderText(null);
-            alert.setContentText("รหัสผ่านไม่ตรงกัน");
-
-            alert.showAndWait();
         } else {
             member.setM_Id(memberList);
             member.setM_firstname(firstNameStr);
@@ -87,7 +72,5 @@ public class AddMemberController {
         firstNameField.setText("");
         lastNameField.setText("");
         phoneField.setText("");
-        passwordField.setText("");
-        confirmPasswordField.setText("");
     }
 }
