@@ -38,6 +38,14 @@ public class AddDrinkController {
 
     @FXML
     private Button extraSweetBtn;
+    @FXML
+    private Button freshMilkBtn;
+
+    @FXML
+    private Button almondMilkBtn;
+
+    @FXML
+    private Button oatMilkBtn;
 
     public Menu menu = new Menu("0","0",0f,"0","0","normal","drink") ;
 
@@ -48,6 +56,9 @@ public class AddDrinkController {
     Connection conn = null;
     Statement stmt = null;
     ResultSet rs = null;
+
+    String milk = "";
+    String sweet = "";
 
     @FXML
     public void initialize() {
@@ -60,7 +71,7 @@ public class AddDrinkController {
 
     @FXML
     private void handleNoSweetnessBtn(ActionEvent event) throws IOException {
-        menu.setMn_option("no");
+        sweet = "no";
         noSweetBtn.setStyle("-fx-background-color: #632f15");
         lessSweetBtn.setStyle("-fx-background-color: #b68e78");
         extraSweetBtn.setStyle("-fx-background-color: #b68e78");
@@ -68,7 +79,7 @@ public class AddDrinkController {
 
     @FXML
     private void handleLessSweetnessBtn(ActionEvent event) throws IOException {
-        menu.setMn_option("less");
+        sweet = "less";
         lessSweetBtn.setStyle("-fx-background-color: #632f15");
         noSweetBtn.setStyle("-fx-background-color: #b68e78");
         extraSweetBtn.setStyle("-fx-background-color: #b68e78");
@@ -76,7 +87,7 @@ public class AddDrinkController {
 
     @FXML
     private void handleExtraSweetnessBtn(ActionEvent event) throws IOException {
-        menu.setMn_option("extra");
+        sweet = "extra";
         extraSweetBtn.setStyle("-fx-background-color: #632f15");
         lessSweetBtn.setStyle("-fx-background-color: #b68e78");
         noSweetBtn.setStyle("-fx-background-color: #b68e78");
@@ -84,17 +95,26 @@ public class AddDrinkController {
 
     @FXML
     private void handleFreshMilkBtn(ActionEvent event) throws IOException {
-
+        milk = "fresh";
+        freshMilkBtn.setStyle("-fx-background-color: #632f15");
+        almondMilkBtn.setStyle("-fx-background-color: #b68e78");
+        oatMilkBtn.setStyle("-fx-background-color: #b68e78");
     }
 
     @FXML
     private void handleAlmondMilkBtn(ActionEvent event) throws IOException {
-
+        milk = "almond";
+        almondMilkBtn.setStyle("-fx-background-color: #632f15");
+        freshMilkBtn.setStyle("-fx-background-color: #b68e78");
+        oatMilkBtn.setStyle("-fx-background-color: #b68e78");
     }
 
     @FXML
     private void handleOatMilkBtn(ActionEvent event) throws IOException {
-
+        milk = "oat";
+        oatMilkBtn.setStyle("-fx-background-color: #632f15");
+        freshMilkBtn.setStyle("-fx-background-color: #b68e78");
+        almondMilkBtn.setStyle("-fx-background-color: #b68e78");
     }
 
     @FXML
@@ -113,6 +133,7 @@ public class AddDrinkController {
         menu.setMn_img("test");
         menu.setM_type("drink");
         menu.setMn_status("sell");
+        menu.setMn_option(sweet + "," + milk);
 
         if (nameField.equals("") || priceField.equals("")) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
