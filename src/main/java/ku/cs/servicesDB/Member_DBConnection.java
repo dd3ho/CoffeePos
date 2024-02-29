@@ -26,7 +26,7 @@ public class Member_DBConnection implements Database<Member, MemberList>{
             conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/pm_project", "root", "");
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
-            String query1 = "INSERT INTO member " + "VALUES ('" + member.getM_Id() + "','" + member.getM_firstname() + "','" + member.getM_lastname() + "','" + member.getM_tel() + "','" + member.getM_points() + "','" + member.getM_date_join() + "','" + member.getM_lasted()  + "')";
+            String query1 = "INSERT INTO member " + "VALUES ('" + member.getM_Id() + "','" + member.getM_firstname() + "','" + member.getM_lastname() + "','" + member.getM_tel() + "','" + member.getM_points() + "','" + member.getM_img() + "','" + member.getM_date_join() + "','" + member.getM_lasted()  + "')";
             stmt.executeUpdate(query1);
             System.out.println("Record is inserted in the table successfully..................");
         } catch (Exception excep) {
@@ -117,9 +117,9 @@ public class Member_DBConnection implements Database<Member, MemberList>{
                 String m_firstname = rs.getNString(2);
                 String m_lastname = rs.getString(3);
                 String m_tel = rs.getString(4);
-                int m_points = Integer.valueOf(rs.getNString(5));
+                int m_points = Integer.valueOf(rs.getString(5));
                 String m_date_join = rs.getNString(6);
-                String m_lasted = rs.getNString(7);
+                String m_lasted = rs.getString(7);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("list can use from jdbc");

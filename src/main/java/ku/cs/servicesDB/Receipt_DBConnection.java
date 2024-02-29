@@ -2,7 +2,6 @@ package ku.cs.servicesDB;
 
 import ku.cs.models.Receipt;
 import ku.cs.models.ReceiptList;
-import ku.cs.models.User;
 
 
 import java.sql.*;
