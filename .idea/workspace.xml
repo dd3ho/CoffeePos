@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory" />
+    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/PromotionList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Promotion_DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +90,7 @@
       <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\resources\ku\cs\old" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ku.cs.controllers.old_shop" />
       <recent name="ku.cs.servicesDB" />
       <recent name="ku.cs.models" />
     </key>
@@ -143,7 +150,7 @@
       <workItem from="1706773418298" duration="2655000" />
       <workItem from="1707378950436" duration="5281000" />
       <workItem from="1707976438603" duration="7791000" />
-      <workItem from="1709212782383" duration="2645000" />
+      <workItem from="1709212782383" duration="4181000" />
     </task>
     <task id="LOCAL-00001" summary="moved">
       <created>1707394794920</created>
