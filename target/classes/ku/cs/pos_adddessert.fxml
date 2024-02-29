@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="659.0" style="-fx-background-color: f1e1d8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.AddDessertController">
+=======
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="659.0" style="-fx-background-color: f1e1d8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.AddDessertController">
+>>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
    <children>
       <ImageView fx:id="dessertPhoto" fitHeight="124.0" fitWidth="150.0" layoutX="46.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,7 +25,11 @@
             <Font name="Arial Rounded MT Bold" size="28.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Button fx:id="addPhotoBtn" layoutX="60.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleAddPhotoBtn" style="-fx-background-color: af5757;" text="Add Photo" textFill="WHITE" />
+=======
+      <Button layoutX="60.0" layoutY="242.0" mnemonicParsing="false" style="-fx-background-color: af5757;" text="Add Photo" textFill="WHITE" />
+>>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
       <TextField fx:id="nameField" layoutX="224.0" layoutY="109.0" prefHeight="26.0" prefWidth="326.0" promptText="Name" />
       <TextField fx:id="priceField" layoutX="224.0" layoutY="158.0" prefHeight="26.0" prefWidth="326.0" promptText="Price" />
       <Button layoutX="81.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleBackBtn" style="-fx-background-color: #845b44;" text="Back" textFill="WHITE">

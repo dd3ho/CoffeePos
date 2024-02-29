@@ -2,22 +2,21 @@ package ku.cs.servicesDB;
 
 import ku.cs.models.Menu;
 import ku.cs.models.MenuList;
-import ku.cs.models.User;
-import ku.cs.models.UserList;
+import ku.cs.models.Promotion;
+import ku.cs.models.PromotionList;
 
 import java.sql.*;
 
-public class Menu_DBConnection implements Database<Menu, MenuList> {
+public class Promotion_DBConnect implements Database<Promotion, PromotionList>{
     //database connect
     public Connection conn = null;
     public Statement stmt = null;
     public ResultSet rs = null;
 
     //prepare for return Menu method readData
-    private Menu menuRecord;
-
+    private Promotion promotionRecord;
     @Override
-    public void insertDatabase(Menu menu) {
+    public void insertDatabase(Promotion promotion) {
         //database connect
         Connection conn = null;
         Statement stmt = null;
@@ -30,7 +29,7 @@ public class Menu_DBConnection implements Database<Menu, MenuList> {
             conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/pm_project", "root", "");
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
-            String query1 = "INSERT INTO menu " + "VALUES ('" + menu.getMn_Id() + "','" + menu.getMn_name() + "','" + menu.getMn_price() + "','" + menu.getMn_img() + "','" + menu.getMn_status() + "','" + menu.getMn_option() + "','" + menu.getM_type()  + "')";
+            String query1 = "INSERT INTO promotion " + "VALUES ('" + promotion.getPro_code() + "','" + promotion.getPro_pDiscount() + "','" + promotion.getPro_bDiscount() + "','" + promotion.getPro_mnId() + "')";
             stmt.executeUpdate(query1);
             System.out.println("Record is inserted in the table successfully..................");
         } catch (Exception excep) {
@@ -52,16 +51,13 @@ public class Menu_DBConnection implements Database<Menu, MenuList> {
     }
 
     @Override
-    public Menu readRecord(String query) {
+    public Promotion readRecord(String query) {
 
         //prepare Data
-        String mn_Id;
-        String mn_name;
-        Float mn_price;
-        String mn_img;
-        String mn_status;
-        String mn_option;
-        String m_type;
+        String pro_code;
+        float pro_pDiscount;
+        float pro_bDiscount;
+        String pro_mnId;
 
         //DB connect
         try {
@@ -77,16 +73,12 @@ public class Menu_DBConnection implements Database<Menu, MenuList> {
             rs = stmt.executeQuery(query);
 
             while (rs.next()){
-                mn_Id = rs.getString(1);
-                mn_name = rs.getNString(2);
-                mn_price = Float.valueOf(rs.getString(3));
-                mn_img = rs.getString(4);
-                mn_status = rs.getNString(5);
-                mn_option = rs.getNString(6);
-                m_type = rs.getNString(7);
+                pro_code = rs.getString(1);
+                pro_pDiscount = Float.parseFloat(rs.getNString(2));
+                pro_bDiscount = Float.valueOf(rs.getString(3));
+                pro_mnId = rs.getString(4);
 
-
-                this.menuRecord = new Menu(mn_Id, mn_name, mn_price, mn_img, mn_status, mn_option, m_type);
+                this.promotionRecord = new Promotion(pro_code, pro_pDiscount, pro_bDiscount, pro_mnId);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("loginAccount can use from jdbc");
@@ -106,20 +98,17 @@ public class Menu_DBConnection implements Database<Menu, MenuList> {
         }
         System.out.println("Please check it in the MySQL Table......... ……..");
 
-        return menuRecord;
+        return promotionRecord;
     }
 
     @Override
-    public MenuList readDatabase(String query) {
+    public PromotionList readDatabase(String q) {
         //prepare Data
-        String mn_Id;
-        String mn_name;
-        Float mn_price;
-        String mn_img;
-        String mn_status;
-        String mn_option;
-        String m_type;
-        MenuList list = new MenuList();
+        String pro_code;
+        float pro_pDiscount;
+        float pro_bDiscount;
+        String pro_mnId;
+        PromotionList list = new PromotionList();
 
         //DB connect
         try {
@@ -132,19 +121,16 @@ public class Menu_DBConnection implements Database<Menu, MenuList> {
             System.out.println("Connection is created successfully:");
 
             stmt = conn.createStatement();
-            rs = stmt.executeQuery(query);
+            rs = stmt.executeQuery(q);
 
             while (rs.next()) {
-                mn_Id = rs.getString(1);
-                mn_name = rs.getNString(2);
-                mn_price = Float.valueOf(rs.getString(3));
-                mn_img = rs.getString(4);
-                mn_status = rs.getNString(5);
-                mn_option = rs.getNString(6);
-                m_type = rs.getNString(7);
+                pro_code = rs.getString(1);
+                pro_pDiscount = Float.parseFloat(rs.getNString(2));
+                pro_bDiscount = Float.valueOf(rs.getString(3));
+                pro_mnId = rs.getString(4);
 
-                this.menuRecord = new Menu(mn_Id, mn_name, mn_price, mn_img, mn_status, mn_option, m_type);
-                list.addMenu(menuRecord);
+                this.promotionRecord = new Promotion(pro_code, pro_pDiscount, pro_bDiscount, pro_mnId);
+                list.addPromotion(promotionRecord);
 //                System.out.println(empLoginAccount.toCsv());
             }
             System.out.println("list can use from jdbc");

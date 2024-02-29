@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" afterDir="false" />
@@ -82,6 +83,13 @@
       <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/LoanAgreement_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/LoanAgreement_DBConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Receipt_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Receipt_DBConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/PromotionList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Promotion_DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" afterDir="false" />
+>>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +137,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -146,16 +155,39 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/USER/Desktop/pm/CoffeePOS/src/main/java/ku/cs/servicesDB",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ku.cs.models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\java\ku\cs\servicesDB" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\resources\ku\cs\old" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ku.cs.controllers.old_shop" />
+      <recent name="ku.cs.servicesDB" />
       <recent name="ku.cs.models" />
     </key>
   </component>
@@ -213,12 +245,17 @@
       <workItem from="1706722323254" duration="3654000" />
       <workItem from="1706773418298" duration="2655000" />
       <workItem from="1707378950436" duration="5281000" />
+<<<<<<< HEAD
       <workItem from="1707976438603" duration="7194000" />
       <workItem from="1709212636407" duration="381000" />
       <workItem from="1709213716548" duration="34000" />
       <workItem from="1709213850222" duration="487000" />
       <workItem from="1709214445930" duration="1308000" />
       <workItem from="1709215772827" duration="2919000" />
+=======
+      <workItem from="1707976438603" duration="7791000" />
+      <workItem from="1709212782383" duration="4181000" />
+>>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
     </task>
     <task id="LOCAL-00001" summary="moved">
       <created>1707394794920</created>
