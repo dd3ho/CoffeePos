@@ -6,11 +6,16 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import ku.cs.models.Menu;
 import ku.cs.models.MenuList;
 import ku.cs.servicesDB.Database;
 import ku.cs.servicesDB.Menu_DBConnection;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -34,6 +39,17 @@ public class AddDessertController {
 
     @FXML
     private Button extraSweetBtn;
+
+    @FXML
+    private Button addPhotoBtn;
+
+    @FXML
+    private ImageView dessertPhoto;
+
+    @FXML
+    private String imageName;
+
+    File selectedFile;
 
     public Menu menu = new Menu("0","0",0f,"0","sell","normal","dessert") ;
 
@@ -91,7 +107,7 @@ public class AddDessertController {
 
         menu.setMn_name(nameStr);
         menu.setMn_price(Float.valueOf(priceStr));
-        menu.setMn_img("test");
+        menu.setMn_img(imageName);
 
         if (nameField.equals("") || priceField.equals("")) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -105,6 +121,23 @@ public class AddDessertController {
             menu.setMn_Id(menuList);
             database.insertDatabase(menu);
             System.out.println(menu.getMn_Id() + "," + menu.getMn_name() + "," + menu.getMn_option());
+        }
+    }
+
+    @FXML
+    private void handleAddPhotoBtn(ActionEvent event) throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("image", "*.jpg", "*.png"));
+        selectedFile = fileChooser.showOpenDialog(new Stage());
+
+        if(selectedFile != null) {
+            String filenameWithFullPath = selectedFile.toString();
+            File file = new File(filenameWithFullPath);
+            imageName = file.getName();
+            System.out.println(imageName);
+            Image image = new Image("file:///" + selectedFile.getAbsolutePath());
+            dessertPhoto.setImage(image);
+            addPhotoBtn.setText("Change Photo");
         }
     }
 
