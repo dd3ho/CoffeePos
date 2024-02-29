@@ -12,6 +12,8 @@ public class MenuList {
     public void addMenu(Menu menu){
         menus.add(menu);
     }
+
+    public Menu getMenu(int i){ return menus.get(i);}
     public int countMenus() {
         return menus.size();
     }

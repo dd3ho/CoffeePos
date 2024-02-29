@@ -65,7 +65,7 @@ public class AddDrinkController {
 
     File selectedFile;
 
-    public Menu menu = new Menu("0","0",0f,"0","0","normal","drink") ;
+    public Menu menu = new Menu("0","0",0f,"0","0","normal","drink");
 
     MenuList menuList;
 

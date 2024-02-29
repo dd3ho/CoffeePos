@@ -4,92 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="Arrange directory">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="152512c2-592b-4f68-bb9c-7fd5133e123a" name="Changes" comment="Arrange directory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddPromotionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_member_info.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddDessertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddDessertController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddDrinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/controllers/AddDrinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddessert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddessert.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddrink.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_adddrink.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$RouteScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter$RouteScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/FXRouter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/AddDessertController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/AddDessertController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/AddDrinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/AddDrinkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/FaceRecognitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/FaceRecognitionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosSignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/PosSignupController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdate2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdate2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdateController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdateController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/CreditBoardUpdateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpCheckListController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpCheckListController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpCheckListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpCheckListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebt2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebt2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebtController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebtController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDebtController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpDocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoice2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoice2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoiceController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoiceController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpInvoiceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoan2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoan2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoanController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoanController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpLoanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebt2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebt2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebtController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebtController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebtController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpPayDebtController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpReportController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpReportController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/EmpReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerAssignController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerAssignController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerAssignController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerAssignController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/ManagerHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/SampleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/controllers/old/SignupController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/MemberList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/MemberList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/MenuList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/MenuList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/UserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/UserList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/CustomerList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/CustomerList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/DocumentTOB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/DocumentTOB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/DocumentTOBList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/DocumentTOBList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/EmployeeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/EmployeeList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/InvoiceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/InvoiceList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/LoanAgreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/LoanAgreement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/LoanAgreementList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/LoanAgreementList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Receipt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/Receipt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/models/old/ReceiptList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/models/old/ReceiptList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/pos_adddessert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/pos_adddessert.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/pos_adddrink.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/pos_adddrink.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/DatabaseConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Menu_DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/Menu_DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/MySQLConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/User_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/User_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Customer_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Customer_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/DocumentTOB_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/DocumentTOB_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Employee_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Employee_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Invoice_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Invoice_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/LoanAgreement_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/LoanAgreement_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Receipt_DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ku/cs/servicesDB/old/Receipt_DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/PromotionList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Promotion_DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Menu_DBConnection.java" afterDir="false" />
->>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/models/MenuList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/models/MenuList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Promotion_DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ku/cs/servicesDB/Promotion_DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_promotion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ku/cs/pos_promotion.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +31,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
+        &quot;lastFilter&quot;: {
+        &quot;state&quot;: &quot;OPEN&quot;
+        }
+        }</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -127,8 +50,8 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
+        &quot;associatedIndex&quot;: 1
+        }</component>
   <component name="ProjectId" id="2aiEigsCz1hJzJqRql9j51fJmll" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -137,64 +60,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project-641-team&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/USER/Desktop/pm/CoffeePOS/src/main/java/ku/cs/servicesDB",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
->>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ku.cs.models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\java\ku\cs\servicesDB" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Desktop\pm\CoffeePOS\src\main\resources\ku\cs\old" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ku.cs.controllers.old_shop" />
-      <recent name="ku.cs.servicesDB" />
-      <recent name="ku.cs.models" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ku.cs.App" />
-      <module name="cs211-431-project" />
+      <module name="CoffeePos" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ku.cs.*" />
@@ -205,84 +74,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerTest.Isdigit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cs211-431-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CustomerTest" />
-      <option name="METHOD_NAME" value="Isdigit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.CustomerTest.Isdigit" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ef9569a8-3f56-49db-89c3-fa1d58b73a80" name="Changes" comment="" />
-      <created>1704793136591</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1704793136591</updated>
-      <workItem from="1704793138527" duration="1184000" />
-      <workItem from="1704795821106" duration="1555000" />
-      <workItem from="1704885299072" duration="8418000" />
-      <workItem from="1704950169224" duration="2936000" />
-      <workItem from="1704953169445" duration="6163000" />
-      <workItem from="1706719655823" duration="1350000" />
-      <workItem from="1706722323254" duration="3654000" />
-      <workItem from="1706773418298" duration="2655000" />
-      <workItem from="1707378950436" duration="5281000" />
-<<<<<<< HEAD
-      <workItem from="1707976438603" duration="7194000" />
-      <workItem from="1709212636407" duration="381000" />
-      <workItem from="1709213716548" duration="34000" />
-      <workItem from="1709213850222" duration="487000" />
-      <workItem from="1709214445930" duration="1308000" />
-      <workItem from="1709215772827" duration="2919000" />
-=======
-      <workItem from="1707976438603" duration="7791000" />
-      <workItem from="1709212782383" duration="4181000" />
->>>>>>> 752b2c5ec675b3c417ab256f4cf2d554a996d0e3
-    </task>
-    <task id="LOCAL-00001" summary="moved">
-      <created>1707394794920</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1707394794920</updated>
-    </task>
-    <task id="LOCAL-00002" summary="moved">
-      <created>1707394842387</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1707394842387</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Arrange directory">
-      <created>1707395536971</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1707395536971</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -294,11 +93,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="moved" />
-    <MESSAGE value="Arrange directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrange directory" />
   </component>
 </project>
